@@ -1,0 +1,83 @@
+% LaTeX personal report style file
+%
+% Structural Mechanics
+% Department of Civil Engineering
+% Katholieke Universiteit Leuven
+%
+% Course format
+% From pv_rep (Peter Vercruijsse)
+% Last update: gd 990630
+%
+%\typeout{ }
+%\typeout{K.U.Leuven}
+%\typeout{Department of Civil Engineering}
+%\typeout{Structural Mechanics}
+%\typeout{Course style file}
+%\typeout{ }
+
+\setlength{\textwidth}{170mm}
+\setlength{\textheight}{240mm}
+\setlength{\oddsidemargin}{-4.4mm}
+\setlength{\evensidemargin}{-4.4mm}
+\setlength{\topmargin}{-5.0mm}
+\setlength{\parindent}{0.0mm}
+\setlength{\parskip}{6pt}
+\raggedbottom
+
+\def\ps@headings{
+  \let\@mkboth\markboth
+  \def\@oddfoot{}
+  \def\@evenfoot{}
+  \def\@evenhead{\footnotesize\sc\thepage\mbox{ }\hrulefill\mbox{ }\leftmark\hfil\hbox{}}
+  \def\@oddhead{\footnotesize\sc\hbox{}\hfil\rightmark\mbox{ }\hrulefill\mbox{ }\thepage}
+  \def\chaptermark##1{\markboth{##1}{}}
+  \def\sectionmark##1{\markright{##1}}}
+
+\def\ps@myheadings{
+  \let\@mkboth\markboth
+  \def\@oddfoot{}
+  \def\@evenfoot{}
+  \def\@evenhead{\footnotesize\sc\thepage\mbox{ }\hrulefill\hbox{}}
+  \def\@oddhead{\footnotesize\sc\hbox{}\hrulefill\mbox{ }\thepage}
+  \def\chaptermark##1{}
+  \def\sectionmark##1{}}
+
+\pagestyle{headings}
+
+% PAGE CONTROL AND QUOTATION
+
+\def\startchapter{
+  \ifodd\count0
+    \clearpage\thispagestyle{myheadings}\vspace*{\fill}\clearpage
+  \else
+    \vspace*{\fill}\clearpage\fi}
+
+% SPECIAL DEFINITIONS
+
+\def\bbbr{{\rm I\!R}}
+\def\bbbd{{\rm I\!D}}
+
+\def\dsp{\displaystyle}
+\def\txt{\textstyle}
+
+\def\vec#1{
+  \ifmmode\mathchoice
+    {\mbox{\boldmath$\displaystyle\bf#1$}}
+    {\mbox{\boldmath$\textstyle\bf#1$}}
+    {\mbox{\boldmath$\scriptstyle\bf#1$}}
+    {\mbox{\boldmath$\scriptscriptstyle\bf#1$}}\else
+    {\mbox{\boldmath$\bf#1$}} \fi}
+
+%\def\section{\@startsection {section}{1}{\z@}{-3.5ex plus -1ex minus
+% -.2ex}{2.3ex plus .2ex}{\Large\bf\boldmath}}
+\def\section{\@startsection {section}{1}{\z@}{-3.5ex plus -1ex minus
+ -.2ex}{2.3ex plus .2ex}{\Large\bf}}
+\def\subsection{\@startsection{subsection}{2}{\z@}{-3.25ex plus -1ex minus
+ -.2ex}{1.5ex plus .2ex}{\large\bf\boldmath}}
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{-3.25ex plus
+ -1ex minus -.2ex}{1.5ex plus .2ex}{\normalsize\bf\boldmath}}
+\def\paragraph{\@startsection{paragraph}{4}{\z@}{3.25ex plus 1ex minus
+ .2ex}{-1em}{\normalsize\bf\boldmath}}
+\def\subparagraph{\@startsection
+ {subparagraph}{4}{\parindent}{3.25ex plus 1ex minus
+ .2ex}{-1em}{\normalsize\bf\boldmath}}

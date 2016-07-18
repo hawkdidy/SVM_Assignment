@@ -1,0 +1,99 @@
+\documentclass[11pt,oneside,a4paper]{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{lscape}
+\usepackage{psfrag}
+\usepackage[usenames]{color}
+\usepackage{bbm}
+\usepackage[update]{epstopdf}
+\usepackage[bookmarks,pdfstartview=FitH,a4paper,pdfborder={0 0 0}]{hyperref}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage{course}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\pagestyle{fancy}
+\usepackage{tikz}
+
+\renewcommand{\sectionmark}[1]{\markboth{#1}{#1}}
+\renewcommand{\subsectionmark}[1]{\markright{#1}}
+
+\fancyhf{}
+\fancyhead[RO]{\nouppercase{\footnotesize\sc\leftmark\ \hrulefill\ \thepage}}
+\fancyhead[RE]{\nouppercase{\footnotesize\sc\thepage\ \hrulefill\ }}
+\renewcommand{\headrulewidth}{0pt}
+
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else%
+\hbox{}%
+\thispagestyle{empty}%
+\clearpage%
+\if@twocolumn\hbox{}\clearpage\fi\fi\fi}
+\makeatother
+
+
+\renewcommand{\topfraction}{0.9}  % max fraction of floats at top
+\renewcommand{\bottomfraction}{0.8} % max fraction of floats at bottom
+% Parameters for TEXT pages (not float pages):
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}            % 2 may work better
+\setcounter{dbltopnumber}{2}           % for 2-column pages
+\renewcommand{\dbltopfraction}{0.9}    % fit big float above 2-col. text
+\renewcommand{\textfraction}{0.07}     % allow minimal text w. figs
+% Parameters for FLOAT pages (not text pages):
+\renewcommand{\floatpagefraction}{0.7}  % require fuller float pages
+% N.B.: floatpagefraction MUST be less than topfraction !!
+\renewcommand{\dblfloatpagefraction}{0.7} % require fuller float pages
+
+\sloppy
+
+\widowpenalty=10000
+\clubpenalty=10000
+
+\edef\today{%\number\day\
+\ifcase\month\or
+January\or February\or March\or April\or May\or June\or July\or
+August\or September\or October\or November\or December\fi\ \number\year}
+\title{\vspace*{40.0mm}
+  \bf\sf Support Vector Machine Assignment 
+         \vspace*{20.0mm} \\
+  \vspace*{40.0mm}
+  %\vspace{-20mm}\framebox{DRAFT VERSION}\vspace{20mm} \\
+  }
+\author{\sf Mohamedhakim Elakhrass}
+\date{\sf 15/07/2016}
+
+\begin{document}
+
+\begin{figure}
+  \parbox[t]{125mm}{
+    \vspace*{6mm}
+    \scriptsize\sf           FACULTY OF BIOSCIENCE ENGINEERING\\
+    \scriptsize\sf           Masters of Bioinformatics \\
+    \scriptsize\sf\bfseries  Support Vector Machines \\}
+  \parbox[t]{40mm}{
+    \begin{flushright}
+      \includegraphics[height=15mm]{logo.eps}
+    \end{flushright}}
+\end{figure}
+
+\maketitle
+\thispagestyle{empty}
+\raggedbottom
+
+\cleardoublepage
+\pagenumbering{roman}
+\setcounter{tocdepth}{2}
+\tableofcontents
+\cleardoublepage
+\pagenumbering{arabic}
+
+\cleardoublepage
+\end{document}
