@@ -20,6 +20,7 @@
 \usepackage{multirow}
 \pagestyle{fancy}
 \usepackage{tikz}
+\usepackage{subcaption} 
 
 \renewcommand{\sectionmark}[1]{\markboth{#1}{#1}}
 \renewcommand{\subsectionmark}[1]{\markright{#1}}
@@ -98,5 +99,28 @@ August\or September\or October\or November\or December\fi\ \number\year}
 \cleardoublepage
 
 \section{Objectives}
+The objectives of this assignment are to learn and work with real life applications of SVM. 
+\section{Simple 2 Gaussian}
+This sections looks at two simulated datasets. The datasets are created using the MatLab $randn()$ function. One dataset is centered around (1,1) and the other (-1,1)\\
 
+\begin{figure}[h!]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/2_Gaussians}
+		\caption{Two Gaussians}
+		\label{fig:1}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/2_Gaussians_with_classifier}
+		\caption{Two Gaussians with optimal classifier}
+		\label{fig:2}
+	\end{subfigure}
+\end{figure}
+Figure 1: (a) Two Simulated Datasets. (b) Two Simulated Datasets with Optimal Classifier.\\
+
+\textbf{Given this figure, can you make a geometric construction using lines to estimate the optimal classifier? Under which conditions do you think this construction is optimal/valid?}\\
+
+Figure 1:a is the output of the simulated datasets. As shown in figure 1:b it is possible to show an optimal classifier. This classifier is known as the Bayes Classifier. A test observation is assigned with predictor vector $x_{0}$ to the class j for which    \[ Pr(Y=j|X=x_{0}) \] is largest. The classifier is optimal because it produces the lowest possible error rate and allows for some overlap. The classifier is valid because the underlying distribution of the dataset is known. 
+
+\section{The Support Vector Machine}
 \end{document}
