@@ -123,4 +123,21 @@ Figure 1: (a) Two Simulated Datasets. (b) Two Simulated Datasets with Optimal Cl
 Figure 1:a is the output of the simulated datasets. As shown in figure 1:b it is possible to show an optimal classifier. This classifier is known as the Bayes Classifier. A test observation is assigned with predictor vector $x_{0}$ to the class j for which    \[ Pr(Y=j|X=x_{0}) \] is largest. The classifier is optimal because it produces the lowest possible error rate and allows for some overlap. The classifier is valid because the underlying distribution of the dataset is known. 
 
 \section{The Support Vector Machine}
+
+\textbf{Adjust the existing datasets to have at least 10 data points for each class. What do you observe when you are adding data points to the classes? How drastically can classification boundaries change}
+
+Data points added inside the margin drastically change the decision boundary  and become support vectors. Data points added to the side of the opposing color are also automatically support vectors but remain misclassified. Data points added to the same side as its own color have very little effect on the decision boundary. 
+\begin{figure}[h!]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/Default_Linear_Kernal}
+		\caption{Default Linear Kernal}
+		\label{fig:1}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.361\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/10_point_linear_Kernal}
+		\caption{10 Data Point Linear Kernal}
+		\label{fig:2}
+	\end{subfigure}
+\end{figure}
 \end{document}
