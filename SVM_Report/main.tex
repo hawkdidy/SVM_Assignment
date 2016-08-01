@@ -104,19 +104,37 @@ The objectives of this assignment are to learn and work with real life applicati
 This sections looks at two simulated datasets. The datasets are created using the MatLab $randn()$ function. One dataset is centered around (1,1) and the other (-1,1)\\
 
 \begin{figure}[h!]
-	\begin{subfigure}[b]{0.4\textwidth}
-		\includegraphics[width=\textwidth]{../Figures/2_Gaussians}
-		\caption{Two Gaussians}
-		\label{fig:1}
-	\end{subfigure}
-	%
-	\begin{subfigure}[b]{0.4\textwidth}
-		\includegraphics[width=\textwidth]{../Figures/2_Gaussians_with_classifier}
-		\caption{Two Gaussians with optimal classifier}
-		\label{fig:2}
-	\end{subfigure}
+	\setbox0\hbox{%
+		\includegraphics[width=.45\textwidth]{../Figures/2_Gaussians}%
+	}%
+	\setbox2\hbox{%
+		\includegraphics[width=.45\textwidth]{../Figures/2_Gaussians_with_classifier}%
+	}%
+	\ifdim\ht0>\ht2
+	\setbox0\hbox{%
+		\includegraphics[height=\ht2]{../Figures/2_Gaussians}%
+	}%
+	\else
+	\setbox2\hbox{%
+		\includegraphics[height=\ht0]{../Figures/2_Gaussians_with_classifier}%
+	}%
+	\fi
+	\noindent
+	\parbox{.45\textwidth}{%
+		\centering
+		\unhbox0
+		\caption{Two Simulated Datasets.}
+	}%
+	\hfil
+	\parbox{.45\textwidth}{%
+		\centering
+		\unhbox2
+		\caption{Two Simulated Datasets with Optimal Classifier.}
+	}%
 \end{figure}
-Figure 1: (a) Two Simulated Datasets. (b) Two Simulated Datasets with Optimal Classifier.\\
+
+
+
 
 \textbf{Given this figure, can you make a geometric construction using lines to estimate the optimal classifier? Under which conditions do you think this construction is optimal/valid?}\\
 
@@ -124,20 +142,86 @@ Figure 1:a is the output of the simulated datasets. As shown in figure 1:b it is
 
 \section{The Support Vector Machine}
 
-\textbf{Adjust the existing datasets to have at least 10 data points for each class. What do you observe when you are adding data points to the classes? How drastically can classification boundaries change}
+This section will deal with an online demo of a linear and none linear SVM. It will be used to learn the intuition behind changing SVM parameters and changes in the dataset.\\
 
-Data points added inside the margin drastically change the decision boundary  and become support vectors. Data points added to the side of the opposing color are also automatically support vectors but remain misclassified. Data points added to the same side as its own color have very little effect on the decision boundary. 
+
 \begin{figure}[h!]
-	\begin{subfigure}[b]{0.4\textwidth}
-		\includegraphics[width=\textwidth]{../Figures/Default_Linear_Kernal}
-		\caption{Default Linear Kernal}
-		\label{fig:1}
-	\end{subfigure}
-	%
-	\begin{subfigure}[b]{0.361\textwidth}
-		\includegraphics[width=\textwidth]{../Figures/10_point_linear_Kernal}
-		\caption{10 Data Point Linear Kernal}
-		\label{fig:2}
-	\end{subfigure}
+	\setbox0\hbox{%
+		\includegraphics[width=.45\textwidth]{../Figures/Default_Linear_Kernal}%
+	}%
+	\setbox2\hbox{%
+		\includegraphics[width=.45\textwidth]{../Figures/10_point_linear_Kernal}%
+	}%
+	\ifdim\ht0>\ht2
+	\setbox0\hbox{%
+		\includegraphics[height=\ht2]{../Figures/Default_Linear_Kernal}%
+	}%
+	\else
+	\setbox2\hbox{%
+		\includegraphics[height=\ht0]{../Figures/10_point_linear_Kernal}%
+	}%
+	\fi
+	\noindent
+	\parbox{.45\textwidth}{%
+		\centering
+		\unhbox0
+		\caption{Default Linear Kernal.}
+	}%
+	\hfil
+	\parbox{.45\textwidth}{%
+		\centering
+		\unhbox2
+		\caption{10 Data Point Linear Kernal.}
+	}%
 \end{figure}
+
+\textbf{Adjust the existing datasets to have at least 10 data points for each class. What do you observe when you are adding data points to the classes? How drastically can classification boundaries change.}
+
+Data points added inside the margin drastically change the decision boundary  and become support vectors. Data points added to the side of the opposing color are also automatically support vectors but remain misclassified. Data points added to the same side as its own color have very little effect on the decision boundary, although the closer to the boundary the larger the effect. 
+
+\textbf{What if you add an outlying datapoint which lies on the wrong side of the classification boundary? How does it affect the classification hyperplane?}
+
+\begin{figure}[h!]
+	\includegraphics[width=80mm,scale=0.7]{../Figures/misclassified_linear_kernal}
+	\caption{Outlier data point}
+\end{figure}
+
+A data point added to the wrong side of the boundary changes the direction of the hyperplane towards that point. If too many points are added the classifier misclassified all points of the opposing class. 
+
+\textbf{Try different values of C regularization hyperparameter. How does it affect the classification outcome? What is the role of it?}\\
+Using the intial dataset the effects of the regularization hyperparemter can be seen. The parameter control the slack of the SVM model. When C is high there is less tolerance for misclassification and therefore a smaller margin. When C is large there is higher tolerance for misclassification and a larger margin.
+
+\begin{figure}[h!]
+	\setbox0\hbox{%
+		\includegraphics[width=.45\textwidth]{../Figures/small_C_linear_Kernal}%
+	}%
+	\setbox2\hbox{%
+		\includegraphics[width=.45\textwidth]{../Figures/large_C_linear_kernal}%
+	}%
+	\ifdim\ht0>\ht2
+	\setbox0\hbox{%
+		\includegraphics[height= \ht2]{../Figures/small_C_linear_Kernal}%
+	}%
+	\else
+	\setbox2\hbox{%
+		\includegraphics[height=\ht0]{../Figures/large_C_linear_kernal}%
+	}%
+	\fi
+	\noindent
+	\parbox{.45\textwidth}{%
+		\centering
+		\unhbox0
+		\caption{C = .079}
+		\label{fg:methods}
+	}%
+	\hfil
+	\parbox{.45\textwidth}{%
+		\centering
+		\unhbox2
+		\caption{C = 79}
+		\label{fg:method_detail}
+	}%
+\end{figure}
+
+ \textbf{Follow the instructions and switch back to RBF kernel by toggling the “k” button. Compare to the classification outcome of the linear case.}
 \end{document}
