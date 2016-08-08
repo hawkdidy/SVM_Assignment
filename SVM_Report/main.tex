@@ -229,7 +229,7 @@ Using the intial dataset the effects of the regularization hyperparemter can be 
  	\centering
  	\begin{subfigure}[b]{.5\textwidth}
  	
- 		\textbf{Follow the instructions and switch back to RBF kernel by toggling the “k” button. Compare to the classification outcome of the linear case.Try to change the RBF kernel sigma hyperparameter. What is your intuition? How does it affect the classification boundaries? Now try to change both hyperparameters. What is the right choice of those if your data is almost linearly separable?}\\
+ 		\textbf{Follow the instructions and switch back to RBF kernel by toggling the “k” button. Compare to the classification outcome of the linear case.Try to change the RBF kernel sigma hyper parameter. What is your intuition? How does it affect the classification boundaries? Now try to change both hyper parameters. What is the right choice of those if your data is almost linearly separable?}\\
  		
 		 The default RBF kernal has no misclassification as opposed to the linear classifier. This is because the data set is not linearly separable, therefore the linear classifier performs poorly. The RBF kernal has the ability to wrap around the data. Small values of  $\sigma$ however will lead to a risk of over fitting and generalize well. Misclassification is only seen at the higher end of  $\sigma$. The higher  $\sigma$  is the more linear the decision boundary. \\
 		 
@@ -279,8 +279,8 @@ Using the intial dataset the effects of the regularization hyperparemter can be 
  	\begin{subfigure}[b]{.5\textwidth}
  		
  	\textbf{Create a linearly non-separable dataset with an overlapping region between classes (e.g. similar to the previous Gaussian clouds). Give comments on the role of the chosen kernel, the regularization parameter (C) and the kernel parameter (sigma)}\\
- 		
- 		
+ 	
+ 		For this set 25 red and 25 green points were created. These points were made to create a dataset as described above. An RBF kernel was chosen because the dataset is not linearly separable so using a linear kernel would be impossible. The parameters were chosen to appropriately classify the data points but also to leave some slack for misclassification. Due to the overlapping regions, if everything was perfectly classified on this training set you would most likely see an over fitting when you introduce your test set. The C and sigma values were adjusted accordingly. The C value was chosen relatively high to allow for the misclassification. The Sigma is relatively small because a large sigma would cause a near linear decision boundary which would be useless in this case. 
  		
  		
  		
@@ -292,8 +292,12 @@ Using the intial dataset the effects of the regularization hyperparemter can be 
  	\end{subfigure}
  \end{figure}
 
-
-
+\textbf{What is the role of Support Vectors? Change the data-sets to make the number of support vectors
+increase/decrease. When does a particular datapoint become a Support Vector?}\\
+	As a property of this being a quadratic programming problem that is  a dual problem many resulting values of $ \alpha_{k}$ are equal to zero in the classifier $ y(x)= sign[\sum_{k = 1}^{#SV} \alpha_{k} y_{k} x_{k}^{T}x + b] $ This is a property called sparseness. The sum is of the none zero $\alpha_{k}$ which are now support vectors. Geometrically they are located close to the decision boundary. In a linear kernel all vectors inside or at the edge of the margin are support vectors as well as misclassified data points. For the RBF kernel $x$ is replaced by $\varphi(x)$. However this can be infinite dimensional. Therefore the problem can only be solved in the dual. 
+	
+\textbf{When does the corresponding importance of a Support Vector change?}\\
+The importance of support vector changes when the influence it has on the decision boundary is altered. This can happen when changing the c parameter.
 
 
 \end{document}
