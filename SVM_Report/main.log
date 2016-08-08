@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.15)  8 AUG 2016 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.15)  8 AUG 2016 17:17
 entering extended mode
 **./main.tex
 (main.tex
@@ -972,7 +972,17 @@ Underfull \hbox (badness 1102) in paragraph at lines 232--233
  []
 
 
+Underfull \hbox (badness 1325) in paragraph at lines 232--233
+\OT1/cmr/bx/n/10.95 the lin-ear case.Try to change the RBF
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 232--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
@@ -980,59 +990,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--233
 File: ../Figures/Default_RBF.jpg Graphic file (type jpg)
 
 <use ../Figures/Default_RBF.jpg>
-Package pdftex.def Info: ../Figures/Default_RBF.jpg used on input line 241.
+Package pdftex.def Info: ../Figures/Default_RBF.jpg used on input line 244.
 (pdftex.def)             Requested size: 217.6621pt x 237.13042pt.
 
-<../Figures/RBF_sigma_0050.jpg, id=65, 399.99437pt x 436.63126pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../Figures/RBF_sigma_10_C_079.jpg, id=65, 423.5825pt x 436.63126pt>
+File: ../Figures/RBF_sigma_10_C_079.jpg Graphic file (type jpg)
+
+<use ../Figures/RBF_sigma_10_C_079.jpg>
+Package pdftex.def Info: ../Figures/RBF_sigma_10_C_079.jpg used on input line 2
+49.
+(pdftex.def)             Requested size: 211.79073pt x 218.3151pt.
+
+<../Figures/RBF_sigma_0050.jpg, id=66, 399.99437pt x 436.63126pt>
 File: ../Figures/RBF_sigma_0050.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_0050.jpg>
-Package pdftex.def Info: ../Figures/RBF_sigma_0050.jpg used on input line 251.
+Package pdftex.def Info: ../Figures/RBF_sigma_0050.jpg used on input line 256.
 (pdftex.def)             Requested size: 108.83104pt x 118.7981pt.
 
-<../Figures/RBF_sigma_79.jpg, id=66, 416.05438pt x 445.16313pt>
+<../Figures/RBF_sigma_79.jpg, id=67, 416.05438pt x 445.16313pt>
 File: ../Figures/RBF_sigma_79.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_79.jpg>
-Package pdftex.def Info: ../Figures/RBF_sigma_79.jpg used on input line 257.
+Package pdftex.def Info: ../Figures/RBF_sigma_79.jpg used on input line 261.
 (pdftex.def)             Requested size: 108.83104pt x 116.4461pt.
 
-<../Figures/RBF_sigma_1.jpg, id=67, 407.02063pt x 436.12938pt>
+<../Figures/RBF_sigma_1.jpg, id=68, 407.02063pt x 436.12938pt>
 File: ../Figures/RBF_sigma_1.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_1.jpg>
-Package pdftex.def Info: ../Figures/RBF_sigma_1.jpg used on input line 263.
+Package pdftex.def Info: ../Figures/RBF_sigma_1.jpg used on input line 266.
 (pdftex.def)             Requested size: 108.83104pt x 116.61188pt.
 
-<../Figures/RBF_sigma_16.jpg, id=68, 421.07312pt x 445.16313pt>
+<../Figures/RBF_sigma_16.jpg, id=69, 421.07312pt x 445.16313pt>
 File: ../Figures/RBF_sigma_16.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_16.jpg>
-Package pdftex.def Info: ../Figures/RBF_sigma_16.jpg used on input line 269.
+Package pdftex.def Info: ../Figures/RBF_sigma_16.jpg used on input line 271.
 (pdftex.def)             Requested size: 108.83104pt x 115.05362pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
+
+ []
+
+<../Figures/RBF_non_linear_data.jpg, id=70, 403.5075pt x 432.61626pt>
+File: ../Figures/RBF_non_linear_data.jpg Graphic file (type jpg)
+
+<use ../Figures/RBF_non_linear_data.jpg>
+Package pdftex.def Info: ../Figures/RBF_non_linear_data.jpg used on input line 
+291.
+(pdftex.def)             Requested size: 217.6621pt x 233.36505pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [3 <../Figures/small_C_linear_Kernal.jpg> <../Figures/large_C_linear_kernal.jpg
-> <../Figures/Default_RBF.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 280.
- [4 <../Figures/RBF_sigma_0050.jpg> <../Figures/RBF_sigma_79.jpg> <../Figures/R
-BF_sigma_1.jpg> <../Figures/RBF_sigma_16.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 280.
+>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 299.
+ [4 <../Figures/Default_RBF.jpg>] [5 <../Figures/RBF_sigma_10_C_079.jpg> <../Fi
+gures/RBF_sigma_0050.jpg> <../Figures/RBF_sigma_79.jpg> <../Figures/RBF_sigma_1
+.jpg> <../Figures/RBF_sigma_16.jpg> <../Figures/RBF_non_linear_data.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 299.
 
 (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 280.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 280.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 299.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 299.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A947589108C25E8FF7A4FDA606575646;161.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 280.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 299.
  ) 
 Here is how much of TeX's memory you used:
- 18908 strings out of 493622
- 346200 string characters out of 3143644
- 402385 words of memory out of 3000000
- 21925 multiletter control sequences out of 15000+200000
+ 18912 strings out of 493622
+ 346471 string characters out of 3143644
+ 404923 words of memory out of 3000000
+ 21924 multiletter control sequences out of 15000+200000
  14858 words of font info for 57 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  55i,11n,54p,659b,515s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1047,9 +1085,9 @@ cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss1
 7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (6 pages, 721424 bytes).
+Output written on main.pdf (7 pages, 823359 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 17 named destinations out of 1000 (max. 500000)
- 102 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
+ 112 words of extra memory for PDF output out of 10000 (max. 10000000)
 

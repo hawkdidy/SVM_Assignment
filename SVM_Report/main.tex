@@ -225,13 +225,16 @@ Using the intial dataset the effects of the regularization hyperparemter can be 
 
  
 
- \begin{figure}
+ \begin{figure}[h!]
  	\centering
  	\begin{subfigure}[b]{.5\textwidth}
  	
- 		\textbf{Follow the instructions and switch back to RBF kernel by toggling the “k” button. Compare to the classification outcome of the linear case.}\\
+ 		\textbf{Follow the instructions and switch back to RBF kernel by toggling the “k” button. Compare to the classification outcome of the linear case.Try to change the RBF kernel sigma hyperparameter. What is your intuition? How does it affect the classification boundaries? Now try to change both hyperparameters. What is the right choice of those if your data is almost linearly separable?}\\
  		
-		 The default RBF kernal has no misclassification as opposed to the linear classifier. This is because the data set is not linearly separable, therefore the linear classifier performs poorly. The RBF kernal has the ability to wrap around the data. Misclassification is only seen at the higher end of  $\sigma$. The higher  $\sigma$  is the more linear the decision boundary. 
+		 The default RBF kernal has no misclassification as opposed to the linear classifier. This is because the data set is not linearly separable, therefore the linear classifier performs poorly. The RBF kernal has the ability to wrap around the data. Small values of  $\sigma$ however will lead to a risk of over fitting and generalize well. Misclassification is only seen at the higher end of  $\sigma$. The higher  $\sigma$  is the more linear the decision boundary. \\
+		 
+		 The right choice to make when the data is almost linear separable is the linear kernel. As stated above, data that is almost linearly separable but has some overlap can be best classified using Bayes Optimal classifier. This will lead to a linear decision boundary with some misclassification. If an RBF kernel is chosen you may have good predictions on your training data but the model will not generalize to the test data. Using the RBF kernal you can get a near linear decision boundary with $ c = 79$ and $\sigma = 10$
+		 
  		
  	
  	\end{subfigure}%
@@ -239,42 +242,58 @@ Using the intial dataset the effects of the regularization hyperparemter can be 
  		\vspace{-185pt}
  		\centering
  		\includegraphics[width=0.9\linewidth]{../Figures/Default_RBF}
- 		%\caption{RBF kernel}
- 		%\label{fig:RBF_kernel}
  	\end{subfigure}
  \end{figure}
- 
+\begin{figure}
+	\centering
+ 		\includegraphics[scale=0.5]{../Figures/RBF_sigma_10_C_079}
+ 		\caption{Value of $\sigma = 0.79$}
+\end{figure}%
  \begin{figure}[h!]
  	\centering
  	\begin{subfigure}{.25\textwidth}
  		\centering
  		\includegraphics[width=0.9\linewidth]{../Figures/RBF_sigma_0050}
  		\caption{Value of $\sigma = 0.050$}
- 		\label{fig:rbfs1}
  	\end{subfigure}%
  	\begin{subfigure}{.25\textwidth}
  		\centering
  		\includegraphics[width=0.9\linewidth]{../Figures/RBF_sigma_79}
  		\caption{Value of $\sigma = 0.79$}
- 		\label{fig:rbfs2}
  	\end{subfigure}%
  	\begin{subfigure}{.25\textwidth}
  		\centering
  		\includegraphics[width=0.9\linewidth]{../Figures/RBF_sigma_1}
  		\caption{Value of $\sigma = 1$}
- 		\label{fig:rbfs3}
  	\end{subfigure}%
  	\begin{subfigure}{.25\textwidth}
  		\centering
 		\includegraphics[width=0.9\linewidth]{../Figures/RBF_sigma_16}
  		\caption{Value of $\sigma = 16$}
- 		\label{fig:rfbs4}
  	\end{subfigure}
  	\caption{How $\sigma$ effects RBF classifier with C = 1.0}
- 	\label{fig:RBF_sigma}
+ \end{figure}
+ 
+ \begin{figure}[h!]
+ 	\centering
+ 	\begin{subfigure}[b]{.5\textwidth}
+ 		
+ 	\textbf{Create a linearly non-separable dataset with an overlapping region between classes (e.g. similar to the previous Gaussian clouds). Give comments on the role of the chosen kernel, the regularization parameter (C) and the kernel parameter (sigma)}\\
+ 		
+ 		
+ 		
+ 		
+ 		
+ 	\end{subfigure}%
+ 	\begin{subfigure}{.5\textwidth}
+ 		\vspace{-185pt}
+ 		\centering
+ 		\includegraphics[width=0.9\linewidth]{../Figures/RBF_non_linear_data}
+ 	\end{subfigure}
  \end{figure}
 
 
- 
+
+
 
 \end{document}
