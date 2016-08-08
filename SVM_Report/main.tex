@@ -225,25 +225,15 @@ Using the intial dataset the effects of the regularization hyperparemter can be 
 
  
 
- \begin{figure}[h!]
+ \begin{figure}
  	\centering
  	\begin{subfigure}[b]{.5\textwidth}
  	
  		\textbf{Follow the instructions and switch back to RBF kernel by toggling the “k” button. Compare to the classification outcome of the linear case.}\\
- 		In this section, we were asked to switch away from a linear kernel and
- 		opt for the Radial Basis Function kernel (RBF). RBF are localized
- 		function, centered at a particular value, and use a gaussian fit with
- 		a certain spread around the center. 
  		
- 		The same dataset as defined above can be seen on the graphics on
- 		the right. Here, one can observe that all points have been
- 		correctly classified, but the area defined are very wobbly,
- 		displaying clear signs of overfitting.  
+		 The default RBF kernal has no misclassification as opposed to the linear classifier. This is because the data set is not linearly separable, therefore the linear classifier performs poorly. The RBF kernal has the ability to wrap around the data. Misclassification is only seen at the higher end of  $\sigma$. The higher  $\sigma$  is the more linear the decision boundary. 
  		
- 		This can be tuned by changing the value of $\sigma$, which
- 		controls the bandwidth of the gaussian function, see figure
- 		\ref{fig:RBF_sigma}. Larger values of $\sigma$ leading to more
- 		linear decision boundaries.
+ 	
  	\end{subfigure}%
  	\begin{subfigure}{.5\textwidth}
  		\vspace{-185pt}
@@ -284,7 +274,7 @@ Using the intial dataset the effects of the regularization hyperparemter can be 
  	\label{fig:RBF_sigma}
  \end{figure}
 
- The RBF kernal has no misclassification as opposed to the linear classifier. This is because the data set is not linearly seperable. The RBF kernal as the ability to wrap around the data.The RBF is a localized funtcion
+
  
 
 \end{document}
