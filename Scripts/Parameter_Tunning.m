@@ -1,5 +1,5 @@
 % set the parameters to some value
-gam = 10;
+gam = 100;
 sig2 = 1;
 % generate random indices
 idx = randperm(size(X,1));
