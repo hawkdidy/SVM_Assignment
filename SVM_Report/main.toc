@@ -1,3 +1,5 @@
 \contentsline {section}{\numberline {1}Objectives}{1}{section.1}
 \contentsline {section}{\numberline {2}Simple 2 Gaussian}{1}{section.2}
 \contentsline {section}{\numberline {3}The Support Vector Machine}{1}{section.3}
+\contentsline {section}{\numberline {4}Using LSSVM}{6}{section.4}
+\contentsline {section}{\numberline {5}Choice of Hyper-parameters}{9}{section.5}

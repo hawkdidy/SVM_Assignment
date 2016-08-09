@@ -21,6 +21,8 @@
 \pagestyle{fancy}
 \usepackage{tikz}
 \usepackage{subcaption} 
+\usepackage{float}
+
 
 \renewcommand{\sectionmark}[1]{\markboth{#1}{#1}}
 \renewcommand{\subsectionmark}[1]{\markright{#1}}
@@ -71,8 +73,13 @@ August\or September\or October\or November\or December\fi\ \number\year}
 \author{\sf Mohamedhakim Elakhrass}
 \date{\sf 15/07/2016}
 
+
+
+
 \begin{document}
 
+	
+	
 \begin{figure}
   \parbox[t]{125mm}{
     \vspace*{6mm}
@@ -103,7 +110,7 @@ The objectives of this assignment are to learn and work with real life applicati
 \section{Simple 2 Gaussian}
 This sections looks at two simulated datasets. The datasets are created using the MatLab $randn()$ function. One dataset is centered around (1,1) and the other (-1,1)\\
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\setbox0\hbox{%
 		\includegraphics[width=.45\textwidth]{../Figures/2_Gaussians}%
 	}%
@@ -144,7 +151,7 @@ Figure 1:a is the output of the simulated datasets. As shown in figure 1:b it is
 This section will deal with an online demo of a linear and none linear SVM. It will be used to learn the intuition behind changing SVM parameters and changes in the dataset.\\
 
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\setbox0\hbox{%
 		\includegraphics[width=.45\textwidth]{../Figures/Default_Linear_Kernal}%
 	}%
@@ -180,7 +187,7 @@ Data points added inside the margin drastically change the decision boundary  an
 
 \textbf{What if you add an outlying datapoint which lies on the wrong side of the classification boundary? How does it affect the classification hyperplane?}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	 \centering
 	\includegraphics[scale=0.5]{../Figures/misclassified_linear_kernal}
 	\caption{Outlier data point}
@@ -191,7 +198,7 @@ A data point added to the wrong side of the boundary changes the direction of th
 \textbf{Try different values of C regularization hyperparameter. How does it affect the classification outcome? What is the role of it?}\\
 Using the intial dataset the effects of the regularization hyperparemter can be seen. The parameter control the slack of the SVM model. When C is high there is less tolerance for misclassification and therefore a smaller margin. When C is large there is higher tolerance for misclassification and a larger margin.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\setbox0\hbox{%
 		\includegraphics[width=.45\textwidth]{../Figures/small_C_linear_Kernal}%
 	}%
@@ -225,7 +232,7 @@ Using the intial dataset the effects of the regularization hyperparemter can be 
 
  
 
- \begin{figure}[h!]
+ \begin{figure}[H]
  	\centering
  	\begin{subfigure}[b]{.5\textwidth}
  	
@@ -233,7 +240,7 @@ Using the intial dataset the effects of the regularization hyperparemter can be 
  		
 		 The default RBF kernal has no misclassification as opposed to the linear classifier. This is because the data set is not linearly separable, therefore the linear classifier performs poorly. The RBF kernal has the ability to wrap around the data. Small values of  $\sigma$ however will lead to a risk of over fitting and generalize well. Misclassification is only seen at the higher end of  $\sigma$. The higher  $\sigma$  is the more linear the decision boundary. \\
 		 
-		 The right choice to make when the data is almost linear separable is the linear kernel. As stated above, data that is almost linearly separable but has some overlap can be best classified using Bayes Optimal classifier. This will lead to a linear decision boundary with some misclassification. If an RBF kernel is chosen you may have good predictions on your training data but the model will not generalize to the test data. Using the RBF kernal you can get a near linear decision boundary with $ c = 79$ and $\sigma = 10$
+		 The right choice to make when the data is almost linear separable is the linear kernel. As stated above, data that is almost linearly separable but has some overlap can be best classified using Bayes Optimal classifier. This will lead to a linear decision boundary with some misclassification. If an RBF kernel is chosen you may have good predictions on your validation data but the model will not generalize to the test data. Using the RBF kernal you can get a near linear decision boundary with $ c = 79$ and $\sigma = 10$
 		 
  		
  	
@@ -244,12 +251,12 @@ Using the intial dataset the effects of the regularization hyperparemter can be 
  		\includegraphics[width=0.9\linewidth]{../Figures/Default_RBF}
  	\end{subfigure}
  \end{figure}
-\begin{figure}
+\begin{figure}[H]
 	\centering
  		\includegraphics[scale=0.5]{../Figures/RBF_sigma_10_C_079}
  		\caption{Value of $\sigma = 0.79$}
-\end{figure}%
- \begin{figure}[h!]
+\end{figure}
+ \begin{figure}[H]
  	\centering
  	\begin{subfigure}{.25\textwidth}
  		\centering
@@ -274,13 +281,13 @@ Using the intial dataset the effects of the regularization hyperparemter can be 
  	\caption{How $\sigma$ effects RBF classifier with C = 1.0}
  \end{figure}
  
- \begin{figure}[h!]
+ \begin{figure}[H]
  	\centering
  	\begin{subfigure}[b]{.5\textwidth}
  		
  	\textbf{Create a linearly non-separable dataset with an overlapping region between classes (e.g. similar to the previous Gaussian clouds). Give comments on the role of the chosen kernel, the regularization parameter (C) and the kernel parameter (sigma)}\\
  	
- 		For this set 25 red and 25 green points were created. These points were made to create a dataset as described above. An RBF kernel was chosen because the dataset is not linearly separable so using a linear kernel would be impossible. The parameters were chosen to appropriately classify the data points but also to leave some slack for misclassification. Due to the overlapping regions, if everything was perfectly classified on this training set you would most likely see an over fitting when you introduce your test set. The C and sigma values were adjusted accordingly. The C value was chosen relatively high to allow for the misclassification. The Sigma is relatively small because a large sigma would cause a near linear decision boundary which would be useless in this case. 
+ 		For this set 25 red and 25 green points were created. These points were made to create a dataset as described above. An RBF kernel was chosen because the dataset is not linearly separable so using a linear kernel would be impossible. The parameters were chosen to appropriately classify the data points but also to leave some slack for misclassification. Due to the overlapping regions, if everything was perfectly classified on this validation set you would most likely see an over fitting when you introduce your test set. The C and sigma values were adjusted accordingly. The C value was chosen relatively high to allow for the misclassification. The Sigma is relatively small because a large sigma would cause a near linear decision boundary which would be useless in this case. 
  		
  		
  		
@@ -294,10 +301,78 @@ Using the intial dataset the effects of the regularization hyperparemter can be 
 
 \textbf{What is the role of Support Vectors? Change the data-sets to make the number of support vectors
 increase/decrease. When does a particular datapoint become a Support Vector?}\\
-	As a property of this being a quadratic programming problem that is  a dual problem many resulting values of $ \alpha_{k}$ are equal to zero in the classifier $ y(x)= sign[\sum_{k = 1}^{#SV} \alpha_{k} y_{k} x_{k}^{T}x + b] $ This is a property called sparseness. The sum is of the none zero $\alpha_{k}$ which are now support vectors. Geometrically they are located close to the decision boundary. In a linear kernel all vectors inside or at the edge of the margin are support vectors as well as misclassified data points. For the RBF kernel $x$ is replaced by $\varphi(x)$. However this can be infinite dimensional. Therefore the problem can only be solved in the dual. 
+	As a property of this being a quadratic programming problem that is  a dual problem many resulting values of $ \alpha_{k}$ are equal to zero in the classifier $ y(x)= sign[\sum_{k = 1}^{\#SV} \alpha_{k} y_{k} x_{k}^{T}x + b] $ This is a property called sparseness. The sum is of the none zero $\alpha_{k}$ which are now support vectors. Geometrically they are located close to the decision boundary. In a linear kernel all vectors inside or at the edge of the margin are support vectors as well as misclassified data points. For the RBF kernel $x$ is replaced by $\varphi(x)$. However this can be infinite dimensional. Therefore the problem can only be solved in the dual. 
 	
 \textbf{When does the corresponding importance of a Support Vector change?}\\
 The importance of support vector changes when the influence it has on the decision boundary is altered. This can happen when changing the c parameter.
 
+\section{Using LSSVM}
+In this section the matlab package LSSVM will be used to explore the Iris Dataset.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{../Figures/iris_intial}
+	\caption{Value of $\sigma = 0.79$}
+\end{figure}
+
+\textbf{What is the performance on the test set Xt and Yt?}\\
+The performance shows a $55\%$ error rate.
+
+\textbf{What happens when you are changing the degree of a polynomial kernel? Explain the obtained results.
+Does it correspond to the changes in sigma hyperparameter of the RBF kernel in the previous example?}\\\
+
+The first degree polynomial is just a linear kernel, therefore it has the same results. The 2nd degree has 4 misclassification. The 3rd degree has 3 misclassification. The 4th degree has 3 and the 5th has 3. Increasing the degree of polynomial is a little like decreasing sigma of the RBF. It creates a less linear boundary that is more prone to over fitting. 
+
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/poly_degree_1}
+		\caption{Degree 1}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/poly_degree_2}
+		\caption{Degree 2}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/poly_degree_3}
+		\caption{Degree 3}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/poly_degree_4}
+		\caption{Degree 4}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+	\includegraphics[width=\textwidth]{../Figures/poly_degree_5}
+	\caption{Degree 5}
+\end{subfigure}
+\caption{Varying Degrees of the Polynomial Kernel}
+\end{figure}
+\textbf{Try out a good range of
+different sig2’s as kernel parameters. For each individual value of sig2, the corresponding LS-SVM
+is evaluated on the test set. Make a figure of the sig2’s with their corresponding test set performance. Fix a reasonable choice for the sig2 of the RBF
+kernel and again compare a range of gam’s by plotting the corresponding test set performances. What
+is a good range for gam?}\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{../Figures/RBF_sig2}
+	\caption{Error rate VS. Sig2}
+\end{figure}
+A range used for both sig2 and gamma was 0.01, 0.5, 4, 10, 20, 100.Between point 5 and 14 seem to have the best range for sig2. With a sig2 of 12 the best gam is between 2 and 8.   
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{../Figures/RBF_gam}
+	\caption{Error rate VS. gam}
+\end{figure}
+
+Comparing to the results from the sample script you get a very similar outlook. You need a good balance between gam and sig to balance between over fitting and misclassification. 
+
+\section{Choice of Hyper-parameters}
+In this section the intuition developed from the previous sections will be used to start using autotuning algorithms. \\
+
+\textbf{Motivate why this validation set used to optimize a number of(tuning-) parameters cannot used again to measure the final model.} \\
+
+Validation set is used to optimize parameters to make sure that the model can generalize well. If someone was to just train the model on one data set and validate it on another without using a test set the model will likely "memorize the data" (difference between 'dumb' AI and smart 'AI'). Therefore a set of data that was not touched during the tuning process must be the final test to see if the model can generalize. 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.7)  8 AUG 2016 22:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.7)  9 AUG 2016 03:34
 entering extended mode
 **./main.tex
 (main.tex
@@ -761,78 +761,87 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 s\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count146
+\float@exts=\toks35
+\float@box=\box41
+\@float@everytoks=\toks36
+\@floatcapt=\box42
+)
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 30.
+less on input line 32.
 
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 79.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    ... okay on input line 79.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count146
+\scratchcounter=\count147
 \scratchdimen=\dimen189
-\scratchbox=\box41
-\nofMPsegments=\count147
-\nofMParguments=\count148
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count149
+\scratchbox=\box43
+\nofMPsegments=\count148
+\nofMParguments=\count149
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count150
 \MPscratchDim=\dimen190
-\MPnumerator=\count150
-\makeMPintoPDFobject=\count151
-\everyMPtoPDFconversion=\toks36
+\MPnumerator=\count151
+\makeMPintoPDFobject=\count152
+\everyMPtoPDFconversion=\toks38
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 74.
+\AtBeginShipoutBox=\box44
+Package hyperref Info: Link coloring OFF on input line 79.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count152
+\c@section@level=\count153
 )
-LaTeX Info: Redefining \ref on input line 74.
-LaTeX Info: Redefining \pageref on input line 74.
-LaTeX Info: Redefining \nameref on input line 74.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
 
 (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c@lstlisting=\count153
+\c@lstlisting=\count154
  ABD: EveryShipout initializing macros
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
 
  []
 
 
-LaTeX Warning: File `logo.eps' not found on input line 85.
+LaTeX Warning: File `logo.eps' not found on input line 92.
 
 Package epstopdf Info: Source file: <logo.eps>
 (epstopdf)             Output file: <logo-eps-converted-to.pdf>
@@ -840,24 +849,24 @@ Package epstopdf Info: Source file: <logo.eps>
 (epstopdf)                    size: 11868 bytes
 (epstopdf)             Command: <epstopdf --outfile=logo-eps-converted-to.pdf l
 ogo.eps>
-(epstopdf)             \includegraphics on input line 85.
+(epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
-<logo-eps-converted-to.pdf, id=18, 159.59625pt x 57.21375pt>
+<logo-eps-converted-to.pdf, id=22, 159.59625pt x 57.21375pt>
 File: logo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use logo-eps-converted-to.pdf>
-Package pdftex.def Info: logo-eps-converted-to.pdf used on input line 85.
+Package pdftex.def Info: logo-eps-converted-to.pdf used on input line 92.
 (pdftex.def)             Requested size: 119.05641pt x 42.67912pt.
 
-Overfull \hbox (5.24539pt too wide) in paragraph at lines 85--85
+Overfull \hbox (5.24539pt too wide) in paragraph at lines 92--92
  []
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 89.
+LaTeX Font Info:    Try loading font information for U+msa on input line 96.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 89.
+LaTeX Font Info:    Try loading font information for U+msb on input line 96.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -878,103 +887,99 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-<../Figures/2_Gaussians.jpg, id=42, 843.15pt x 632.3625pt>
+<../Figures/2_Gaussians.jpg, id=47, 843.15pt x 632.3625pt>
 File: ../Figures/2_Gaussians.jpg Graphic file (type jpg)
 
 <use ../Figures/2_Gaussians.jpg>
-Package pdftex.def Info: ../Figures/2_Gaussians.jpg used on input line 108.
+Package pdftex.def Info: ../Figures/2_Gaussians.jpg used on input line 115.
 (pdftex.def)             Requested size: 217.6621pt x 163.24283pt.
 
-<../Figures/2_Gaussians_with_classifier.jpg, id=43, 421.575pt x 316.18124pt>
+<../Figures/2_Gaussians_with_classifier.jpg, id=48, 421.575pt x 316.18124pt>
 File: ../Figures/2_Gaussians_with_classifier.jpg Graphic file (type jpg)
 
 <use ../Figures/2_Gaussians_with_classifier.jpg>
 Package pdftex.def Info: ../Figures/2_Gaussians_with_classifier.jpg used on inp
-ut line 111.
+ut line 118.
 (pdftex.def)             Requested size: 217.6621pt x 163.24765pt.
 File: ../Figures/2_Gaussians_with_classifier.jpg Graphic file (type jpg)
 
 <use ../Figures/2_Gaussians_with_classifier.jpg>
 Package pdftex.def Info: ../Figures/2_Gaussians_with_classifier.jpg used on inp
-ut line 119.
+ut line 126.
 (pdftex.def)             Requested size: 217.6571pt x 163.24283pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
-<../Figures/Default_Linear_Kernal.jpg, id=44, 408.02437pt x 431.6125pt>
+<../Figures/Default_Linear_Kernal.jpg, id=49, 408.02437pt x 431.6125pt>
 File: ../Figures/Default_Linear_Kernal.jpg Graphic file (type jpg)
 
 <use ../Figures/Default_Linear_Kernal.jpg>
 Package pdftex.def Info: ../Figures/Default_Linear_Kernal.jpg used on input lin
-e 149.
+e 156.
 (pdftex.def)             Requested size: 217.6621pt x 230.24852pt.
 
-<../Figures/10_point_linear_Kernal.jpg, id=45, 406.51875pt x 447.17062pt>
+<../Figures/10_point_linear_Kernal.jpg, id=50, 406.51875pt x 447.17062pt>
 File: ../Figures/10_point_linear_Kernal.jpg Graphic file (type jpg)
 
 <use ../Figures/10_point_linear_Kernal.jpg>
 Package pdftex.def Info: ../Figures/10_point_linear_Kernal.jpg used on input li
-ne 152.
+ne 159.
 (pdftex.def)             Requested size: 217.6621pt x 239.42838pt.
 File: ../Figures/10_point_linear_Kernal.jpg Graphic file (type jpg)
 
 <use ../Figures/10_point_linear_Kernal.jpg>
 Package pdftex.def Info: ../Figures/10_point_linear_Kernal.jpg used on input li
-ne 160.
+ne 167.
 (pdftex.def)             Requested size: 209.31917pt x 230.24852pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.180 
+l.183 
        [1
 
 
  <../Figures/2_Gaussians.jpg> <../Figures/2_Gaussians_with_classifier.jpg>]
-<../Figures/misclassified_linear_kernal.jpg, id=55, 418.06187pt x 440.64626pt>
+<../Figures/misclassified_linear_kernal.jpg, id=60, 418.06187pt x 440.64626pt>
 File: ../Figures/misclassified_linear_kernal.jpg Graphic file (type jpg)
 
 <use ../Figures/misclassified_linear_kernal.jpg>
 Package pdftex.def Info: ../Figures/misclassified_linear_kernal.jpg used on inp
-ut line 185.
+ut line 192.
 (pdftex.def)             Requested size: 209.03041pt x 220.32259pt.
  [2 <../Figures/Default_Linear_Kernal.jpg> <../Figures/10_point_linear_Kernal.j
 pg> <../Figures/misclassified_linear_kernal.jpg>]
-<../Figures/small_C_linear_Kernal.jpg, id=62, 390.96063pt x 434.12187pt>
+<../Figures/small_C_linear_Kernal.jpg, id=67, 390.96063pt x 434.12187pt>
 File: ../Figures/small_C_linear_Kernal.jpg Graphic file (type jpg)
 
 <use ../Figures/small_C_linear_Kernal.jpg>
 Package pdftex.def Info: ../Figures/small_C_linear_Kernal.jpg used on input lin
-e 196.
+e 203.
 (pdftex.def)             Requested size: 217.6621pt x 241.68901pt.
 
-<../Figures/large_C_linear_kernal.jpg, id=63, 404.00937pt x 448.67625pt>
+<../Figures/large_C_linear_kernal.jpg, id=68, 404.00937pt x 448.67625pt>
 File: ../Figures/large_C_linear_kernal.jpg Graphic file (type jpg)
 
 <use ../Figures/large_C_linear_kernal.jpg>
 Package pdftex.def Info: ../Figures/large_C_linear_kernal.jpg used on input lin
-e 199.
+e 206.
 (pdftex.def)             Requested size: 217.6621pt x 241.72702pt.
 File: ../Figures/large_C_linear_kernal.jpg Graphic file (type jpg)
 
 <use ../Figures/large_C_linear_kernal.jpg>
 Package pdftex.def Info: ../Figures/large_C_linear_kernal.jpg used on input lin
-e 207.
+e 214.
 (pdftex.def)             Requested size: 217.62547pt x 241.68901pt.
 Missing character: There is no ‚ in font cmbx10!
 Missing character: There is no Ä in font cmbx10!
@@ -983,120 +988,193 @@ Missing character: There is no ‚ in font cmbx10!
 Missing character: There is no Ä in font cmbx10!
 Missing character: There is no ù in font cmbx10!
 
-Underfull \hbox (badness 1102) in paragraph at lines 232--233
+Underfull \hbox (badness 1102) in paragraph at lines 239--240
 []\OT1/cmr/bx/n/10.95 Follow the in-struc-tions and switch back
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 232--233
+Underfull \hbox (badness 1325) in paragraph at lines 239--240
 \OT1/cmr/bx/n/10.95 the lin-ear case.Try to change the RBF
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
-<../Figures/Default_RBF.jpg, id=64, 404.00937pt x 440.14438pt>
+<../Figures/Default_RBF.jpg, id=69, 404.00937pt x 440.14438pt>
 File: ../Figures/Default_RBF.jpg Graphic file (type jpg)
 
 <use ../Figures/Default_RBF.jpg>
-Package pdftex.def Info: ../Figures/Default_RBF.jpg used on input line 244.
+Package pdftex.def Info: ../Figures/Default_RBF.jpg used on input line 251.
 (pdftex.def)             Requested size: 217.6621pt x 237.13042pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../Figures/RBF_sigma_10_C_079.jpg, id=65, 423.5825pt x 436.63126pt>
+<../Figures/RBF_sigma_10_C_079.jpg, id=70, 423.5825pt x 436.63126pt>
 File: ../Figures/RBF_sigma_10_C_079.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_10_C_079.jpg>
 Package pdftex.def Info: ../Figures/RBF_sigma_10_C_079.jpg used on input line 2
-49.
+56.
 (pdftex.def)             Requested size: 211.79073pt x 218.3151pt.
-
-<../Figures/RBF_sigma_0050.jpg, id=66, 399.99437pt x 436.63126pt>
+ [3 <../Figures/small_C_linear_Kernal.jpg> <../Figures/large_C_linear_kernal.jp
+g>]
+<../Figures/RBF_sigma_0050.jpg, id=76, 399.99437pt x 436.63126pt>
 File: ../Figures/RBF_sigma_0050.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_0050.jpg>
-Package pdftex.def Info: ../Figures/RBF_sigma_0050.jpg used on input line 256.
+Package pdftex.def Info: ../Figures/RBF_sigma_0050.jpg used on input line 263.
 (pdftex.def)             Requested size: 108.83104pt x 118.7981pt.
 
-<../Figures/RBF_sigma_79.jpg, id=67, 416.05438pt x 445.16313pt>
+<../Figures/RBF_sigma_79.jpg, id=77, 416.05438pt x 445.16313pt>
 File: ../Figures/RBF_sigma_79.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_79.jpg>
-Package pdftex.def Info: ../Figures/RBF_sigma_79.jpg used on input line 261.
+Package pdftex.def Info: ../Figures/RBF_sigma_79.jpg used on input line 268.
 (pdftex.def)             Requested size: 108.83104pt x 116.4461pt.
 
-<../Figures/RBF_sigma_1.jpg, id=68, 407.02063pt x 436.12938pt>
+<../Figures/RBF_sigma_1.jpg, id=78, 407.02063pt x 436.12938pt>
 File: ../Figures/RBF_sigma_1.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_1.jpg>
-Package pdftex.def Info: ../Figures/RBF_sigma_1.jpg used on input line 266.
+Package pdftex.def Info: ../Figures/RBF_sigma_1.jpg used on input line 273.
 (pdftex.def)             Requested size: 108.83104pt x 116.61188pt.
 
-<../Figures/RBF_sigma_16.jpg, id=69, 421.07312pt x 445.16313pt>
+<../Figures/RBF_sigma_16.jpg, id=79, 421.07312pt x 445.16313pt>
 File: ../Figures/RBF_sigma_16.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_16.jpg>
-Package pdftex.def Info: ../Figures/RBF_sigma_16.jpg used on input line 271.
+Package pdftex.def Info: ../Figures/RBF_sigma_16.jpg used on input line 278.
 (pdftex.def)             Requested size: 108.83104pt x 115.05362pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+ [4 <../Figures/Default_RBF.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
-<../Figures/RBF_non_linear_data.jpg, id=70, 403.5075pt x 432.61626pt>
+<../Figures/RBF_non_linear_data.jpg, id=85, 403.5075pt x 432.61626pt>
 File: ../Figures/RBF_non_linear_data.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_non_linear_data.jpg>
 Package pdftex.def Info: ../Figures/RBF_non_linear_data.jpg used on input line 
-291.
+298.
 (pdftex.def)             Requested size: 217.6621pt x 233.36505pt.
+ [5 <../Figures/RBF_sigma_10_C_079.jpg> <../Figures/RBF_sigma_0050.jpg> <../Fig
+ures/RBF_sigma_79.jpg> <../Figures/RBF_sigma_1.jpg> <../Figures/RBF_sigma_16.jp
+g>]
+<../Figures/iris_intial.jpg, id=93, 562.1pt x 421.575pt>
+File: ../Figures/iris_intial.jpg Graphic file (type jpg)
+
+<use ../Figures/iris_intial.jpg>
+Package pdftex.def Info: ../Figures/iris_intial.jpg used on input line 314.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+ [6 <../Figures/RBF_non_linear_data.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+
+ []
+
+<../Figures/poly_degree_1.jpg, id=100, 562.1pt x 421.575pt>
+File: ../Figures/poly_degree_1.jpg Graphic file (type jpg)
+
+<use ../Figures/poly_degree_1.jpg>
+Package pdftex.def Info: ../Figures/poly_degree_1.jpg used on input line 328.
+(pdftex.def)             Requested size: 193.47577pt x 145.10258pt.
+
+<../Figures/poly_degree_2.jpg, id=101, 562.1pt x 421.575pt>
+File: ../Figures/poly_degree_2.jpg Graphic file (type jpg)
+
+<use ../Figures/poly_degree_2.jpg>
+Package pdftex.def Info: ../Figures/poly_degree_2.jpg used on input line 333.
+(pdftex.def)             Requested size: 193.47577pt x 145.10258pt.
+
+<../Figures/poly_degree_3.jpg, id=102, 562.1pt x 421.575pt>
+File: ../Figures/poly_degree_3.jpg Graphic file (type jpg)
+
+<use ../Figures/poly_degree_3.jpg>
+Package pdftex.def Info: ../Figures/poly_degree_3.jpg used on input line 338.
+(pdftex.def)             Requested size: 193.47577pt x 145.10258pt.
+
+<../Figures/poly_degree_4.jpg, id=103, 562.1pt x 421.575pt>
+File: ../Figures/poly_degree_4.jpg Graphic file (type jpg)
+
+<use ../Figures/poly_degree_4.jpg>
+Package pdftex.def Info: ../Figures/poly_degree_4.jpg used on input line 343.
+(pdftex.def)             Requested size: 193.47577pt x 145.10258pt.
+
+<../Figures/poly_degree_5.jpg, id=104, 562.1pt x 421.575pt>
+File: ../Figures/poly_degree_5.jpg Graphic file (type jpg)
+
+<use ../Figures/poly_degree_5.jpg>
+Package pdftex.def Info: ../Figures/poly_degree_5.jpg used on input line 348.
+(pdftex.def)             Requested size: 193.47577pt x 145.10258pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--351
+[][] []
+ []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 327--351
+[] []
+ []
 
-! You can't use `macro parameter character #' in math mode.
-l.297 ...e classifier $ y(x)= sign[\sum_{k = 1}^{#
-                                                  SV} \alpha_{k} y_{k} x_{k}...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+[7 <../Figures/iris_intial.jpg>]
+Missing character: There is no ‚ in font cmbx10!
+Missing character: There is no Ä in font cmbx10!
+Missing character: There is no ô in font cmbx10!
+Missing character: There is no ‚ in font cmbx10!
+Missing character: There is no Ä in font cmbx10!
+Missing character: There is no ô in font cmbx10!
+Missing character: There is no ‚ in font cmbx10!
+Missing character: There is no Ä in font cmbx10!
+Missing character: There is no ô in font cmbx10!
 
-[3 <../Figures/small_C_linear_Kernal.jpg> <../Figures/large_C_linear_kernal.jpg
->]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
- [4 <../Figures/Default_RBF.jpg>] [5 <../Figures/RBF_sigma_10_C_079.jpg> <../Fi
-gures/RBF_sigma_0050.jpg> <../Figures/RBF_sigma_79.jpg> <../Figures/RBF_sigma_1
-.jpg> <../Figures/RBF_sigma_16.jpg>] [6 <../Figures/RBF_non_linear_data.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
-(main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A947589108C25E8FF7A4FDA606575646;161.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
+<../Figures/RBF_sig2.jpg, id=110, 1188.44pt x 371.3875pt>
+File: ../Figures/RBF_sig2.jpg Graphic file (type jpg)
+
+<use ../Figures/RBF_sig2.jpg>
+Package pdftex.def Info: ../Figures/RBF_sig2.jpg used on input line 360.
+(pdftex.def)             Requested size: 475.36758pt x 148.55235pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 357--362
+
+ []
+
+[8 <../Figures/poly_degree_1.jpg> <../Figures/poly_degree_2.jpg> <../Figures/po
+ly_degree_3.jpg> <../Figures/poly_degree_4.jpg> <../Figures/poly_degree_5.jpg>]
+<../Figures/RBF_gam.jpg, id=116, 1188.44pt x 363.3575pt>
+File: ../Figures/RBF_gam.jpg Graphic file (type jpg)
+
+<use ../Figures/RBF_gam.jpg>
+Package pdftex.def Info: ../Figures/RBF_gam.jpg used on input line 366.
+(pdftex.def)             Requested size: 475.36758pt x 145.34041pt.
+ [9 <../Figures/RBF_sig2.jpg> <../Figures/RBF_gam.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 374.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 374.
+ (main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 374.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 374.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: E353C5CD4D744F795661112A5B57CFB6;208
+(rerunfilecheck)             After:  FEB4E588EEC4BA9BC767AE821EE84695;270.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 374.
  ) 
 Here is how much of TeX's memory you used:
- 18931 strings out of 493335
- 348517 string characters out of 3136681
- 409690 words of memory out of 3000000
- 22074 multiletter control sequences out of 15000+200000
+ 19029 strings out of 493335
+ 350401 string characters out of 3136681
+ 406029 words of memory out of 3000000
+ 22151 multiletter control sequences out of 15000+200000
  14858 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,54p,798b,515s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,12n,54p,800b,515s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
@@ -1110,9 +1188,9 @@ x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (8 pages, 837430 bytes).
+Output written on main.pdf (11 pages, 1048667 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 173 PDF objects out of 1000 (max. 8388607)
+ 30 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 
