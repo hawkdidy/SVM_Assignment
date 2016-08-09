@@ -375,4 +375,41 @@ In this section the intuition developed from the previous sections will be used 
 \textbf{Motivate why this validation set used to optimize a number of(tuning-) parameters cannot used again to measure the final model.} \\
 
 Validation set is used to optimize parameters to make sure that the model can generalize well. If someone was to just train the model on one data set and validate it on another without using a test set the model will likely "memorize the data" (difference between 'dumb' AI and smart 'AI'). Therefore a set of data that was not touched during the tuning process must be the final test to see if the model can generalize. 
+
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/valerrorg}
+		\caption{Error for Gam values 1, 10, 100 with sig2 = 1}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/Valerror}
+		\caption{Error for Sig values 0.1,1,10 with gam = 10}
+	\end{subfigure}
+	\caption{Tuning}
+\end{figure}
+
+Across the different values the error does not really change. It stays steady across all values of gam and sig2 except for when cig2 is 10, then you see a 50\% decrease in error.
+
+\textbf{Think about a clear and intuitive way to represent this technique. Why should one prefer this method
+over a simple validation? Change crossvalidate procedure for leaveoneout (removing the
+10). Is it giving better results? In which cases one would prefer each?}\\
+
+They both perform exactly the same. Leave one out would be prefered when the data set is very large. Leave one out is computationally expensive. LOOCV also gives you a hire chance of over fitting since your model has seen all of your data. 
+
+\textbf{Try to change different parameters like 'csa' (Coupled Simulated Annealing) vs. 'ds' (Randomized
+Directional Search) and 'simplex' (Nelder-Mead method) vs. 'gridsearch' (brute force
+gridsearch). What differences do you observe? Why in some cases the obtained hyperparameters differ
+a lot?}\\
+
+Since there is an element of randomness each run will yield different results. Since this is finding hyper parameters the problem in non-convex and local minima can occur. 
+
+The ROC is often used to asses a model. It is important not to use this on the validation set. It is for the same reason you do not judge a model based on the validation set. Models that memorize their data are not good models. Models must generalize well. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{../Figures/ROC}
+	\caption{Error rate VS. gam}
+\end{figure}
+
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.7)  9 AUG 2016 03:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.7)  9 AUG 2016 04:43
 entering extended mode
 **./main.tex
 (main.tex
@@ -851,7 +851,7 @@ Package epstopdf Info: Source file: <logo.eps>
 ogo.eps>
 (epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
-<logo-eps-converted-to.pdf, id=22, 159.59625pt x 57.21375pt>
+<logo-eps-converted-to.pdf, id=26, 159.59625pt x 57.21375pt>
 File: logo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use logo-eps-converted-to.pdf>
@@ -891,14 +891,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-<../Figures/2_Gaussians.jpg, id=47, 843.15pt x 632.3625pt>
+<../Figures/2_Gaussians.jpg, id=52, 843.15pt x 632.3625pt>
 File: ../Figures/2_Gaussians.jpg Graphic file (type jpg)
 
 <use ../Figures/2_Gaussians.jpg>
 Package pdftex.def Info: ../Figures/2_Gaussians.jpg used on input line 115.
 (pdftex.def)             Requested size: 217.6621pt x 163.24283pt.
 
-<../Figures/2_Gaussians_with_classifier.jpg, id=48, 421.575pt x 316.18124pt>
+<../Figures/2_Gaussians_with_classifier.jpg, id=53, 421.575pt x 316.18124pt>
 File: ../Figures/2_Gaussians_with_classifier.jpg Graphic file (type jpg)
 
 <use ../Figures/2_Gaussians_with_classifier.jpg>
@@ -921,7 +921,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
-<../Figures/Default_Linear_Kernal.jpg, id=49, 408.02437pt x 431.6125pt>
+<../Figures/Default_Linear_Kernal.jpg, id=54, 408.02437pt x 431.6125pt>
 File: ../Figures/Default_Linear_Kernal.jpg Graphic file (type jpg)
 
 <use ../Figures/Default_Linear_Kernal.jpg>
@@ -929,7 +929,7 @@ Package pdftex.def Info: ../Figures/Default_Linear_Kernal.jpg used on input lin
 e 156.
 (pdftex.def)             Requested size: 217.6621pt x 230.24852pt.
 
-<../Figures/10_point_linear_Kernal.jpg, id=50, 406.51875pt x 447.17062pt>
+<../Figures/10_point_linear_Kernal.jpg, id=55, 406.51875pt x 447.17062pt>
 File: ../Figures/10_point_linear_Kernal.jpg Graphic file (type jpg)
 
 <use ../Figures/10_point_linear_Kernal.jpg>
@@ -951,7 +951,7 @@ l.183
 
 
  <../Figures/2_Gaussians.jpg> <../Figures/2_Gaussians_with_classifier.jpg>]
-<../Figures/misclassified_linear_kernal.jpg, id=60, 418.06187pt x 440.64626pt>
+<../Figures/misclassified_linear_kernal.jpg, id=65, 418.06187pt x 440.64626pt>
 File: ../Figures/misclassified_linear_kernal.jpg Graphic file (type jpg)
 
 <use ../Figures/misclassified_linear_kernal.jpg>
@@ -960,7 +960,7 @@ ut line 192.
 (pdftex.def)             Requested size: 209.03041pt x 220.32259pt.
  [2 <../Figures/Default_Linear_Kernal.jpg> <../Figures/10_point_linear_Kernal.j
 pg> <../Figures/misclassified_linear_kernal.jpg>]
-<../Figures/small_C_linear_Kernal.jpg, id=67, 390.96063pt x 434.12187pt>
+<../Figures/small_C_linear_Kernal.jpg, id=72, 390.96063pt x 434.12187pt>
 File: ../Figures/small_C_linear_Kernal.jpg Graphic file (type jpg)
 
 <use ../Figures/small_C_linear_Kernal.jpg>
@@ -968,7 +968,7 @@ Package pdftex.def Info: ../Figures/small_C_linear_Kernal.jpg used on input lin
 e 203.
 (pdftex.def)             Requested size: 217.6621pt x 241.68901pt.
 
-<../Figures/large_C_linear_kernal.jpg, id=68, 404.00937pt x 448.67625pt>
+<../Figures/large_C_linear_kernal.jpg, id=73, 404.00937pt x 448.67625pt>
 File: ../Figures/large_C_linear_kernal.jpg Graphic file (type jpg)
 
 <use ../Figures/large_C_linear_kernal.jpg>
@@ -1007,14 +1007,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
-<../Figures/Default_RBF.jpg, id=69, 404.00937pt x 440.14438pt>
+<../Figures/Default_RBF.jpg, id=74, 404.00937pt x 440.14438pt>
 File: ../Figures/Default_RBF.jpg Graphic file (type jpg)
 
 <use ../Figures/Default_RBF.jpg>
 Package pdftex.def Info: ../Figures/Default_RBF.jpg used on input line 251.
 (pdftex.def)             Requested size: 217.6621pt x 237.13042pt.
 
-<../Figures/RBF_sigma_10_C_079.jpg, id=70, 423.5825pt x 436.63126pt>
+<../Figures/RBF_sigma_10_C_079.jpg, id=75, 423.5825pt x 436.63126pt>
 File: ../Figures/RBF_sigma_10_C_079.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_10_C_079.jpg>
@@ -1023,28 +1023,28 @@ Package pdftex.def Info: ../Figures/RBF_sigma_10_C_079.jpg used on input line 2
 (pdftex.def)             Requested size: 211.79073pt x 218.3151pt.
  [3 <../Figures/small_C_linear_Kernal.jpg> <../Figures/large_C_linear_kernal.jp
 g>]
-<../Figures/RBF_sigma_0050.jpg, id=76, 399.99437pt x 436.63126pt>
+<../Figures/RBF_sigma_0050.jpg, id=81, 399.99437pt x 436.63126pt>
 File: ../Figures/RBF_sigma_0050.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_0050.jpg>
 Package pdftex.def Info: ../Figures/RBF_sigma_0050.jpg used on input line 263.
 (pdftex.def)             Requested size: 108.83104pt x 118.7981pt.
 
-<../Figures/RBF_sigma_79.jpg, id=77, 416.05438pt x 445.16313pt>
+<../Figures/RBF_sigma_79.jpg, id=82, 416.05438pt x 445.16313pt>
 File: ../Figures/RBF_sigma_79.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_79.jpg>
 Package pdftex.def Info: ../Figures/RBF_sigma_79.jpg used on input line 268.
 (pdftex.def)             Requested size: 108.83104pt x 116.4461pt.
 
-<../Figures/RBF_sigma_1.jpg, id=78, 407.02063pt x 436.12938pt>
+<../Figures/RBF_sigma_1.jpg, id=83, 407.02063pt x 436.12938pt>
 File: ../Figures/RBF_sigma_1.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_1.jpg>
 Package pdftex.def Info: ../Figures/RBF_sigma_1.jpg used on input line 273.
 (pdftex.def)             Requested size: 108.83104pt x 116.61188pt.
 
-<../Figures/RBF_sigma_16.jpg, id=79, 421.07312pt x 445.16313pt>
+<../Figures/RBF_sigma_16.jpg, id=84, 421.07312pt x 445.16313pt>
 File: ../Figures/RBF_sigma_16.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sigma_16.jpg>
@@ -1055,7 +1055,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
-<../Figures/RBF_non_linear_data.jpg, id=85, 403.5075pt x 432.61626pt>
+<../Figures/RBF_non_linear_data.jpg, id=90, 403.5075pt x 432.61626pt>
 File: ../Figures/RBF_non_linear_data.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_non_linear_data.jpg>
@@ -1065,7 +1065,7 @@ Package pdftex.def Info: ../Figures/RBF_non_linear_data.jpg used on input line
  [5 <../Figures/RBF_sigma_10_C_079.jpg> <../Figures/RBF_sigma_0050.jpg> <../Fig
 ures/RBF_sigma_79.jpg> <../Figures/RBF_sigma_1.jpg> <../Figures/RBF_sigma_16.jp
 g>]
-<../Figures/iris_intial.jpg, id=93, 562.1pt x 421.575pt>
+<../Figures/iris_intial.jpg, id=98, 562.1pt x 421.575pt>
 File: ../Figures/iris_intial.jpg Graphic file (type jpg)
 
 <use ../Figures/iris_intial.jpg>
@@ -1076,35 +1076,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 322--323
 
  []
 
-<../Figures/poly_degree_1.jpg, id=100, 562.1pt x 421.575pt>
+<../Figures/poly_degree_1.jpg, id=105, 562.1pt x 421.575pt>
 File: ../Figures/poly_degree_1.jpg Graphic file (type jpg)
 
 <use ../Figures/poly_degree_1.jpg>
 Package pdftex.def Info: ../Figures/poly_degree_1.jpg used on input line 328.
 (pdftex.def)             Requested size: 193.47577pt x 145.10258pt.
 
-<../Figures/poly_degree_2.jpg, id=101, 562.1pt x 421.575pt>
+<../Figures/poly_degree_2.jpg, id=106, 562.1pt x 421.575pt>
 File: ../Figures/poly_degree_2.jpg Graphic file (type jpg)
 
 <use ../Figures/poly_degree_2.jpg>
 Package pdftex.def Info: ../Figures/poly_degree_2.jpg used on input line 333.
 (pdftex.def)             Requested size: 193.47577pt x 145.10258pt.
 
-<../Figures/poly_degree_3.jpg, id=102, 562.1pt x 421.575pt>
+<../Figures/poly_degree_3.jpg, id=107, 562.1pt x 421.575pt>
 File: ../Figures/poly_degree_3.jpg Graphic file (type jpg)
 
 <use ../Figures/poly_degree_3.jpg>
 Package pdftex.def Info: ../Figures/poly_degree_3.jpg used on input line 338.
 (pdftex.def)             Requested size: 193.47577pt x 145.10258pt.
 
-<../Figures/poly_degree_4.jpg, id=103, 562.1pt x 421.575pt>
+<../Figures/poly_degree_4.jpg, id=108, 562.1pt x 421.575pt>
 File: ../Figures/poly_degree_4.jpg Graphic file (type jpg)
 
 <use ../Figures/poly_degree_4.jpg>
 Package pdftex.def Info: ../Figures/poly_degree_4.jpg used on input line 343.
 (pdftex.def)             Requested size: 193.47577pt x 145.10258pt.
 
-<../Figures/poly_degree_5.jpg, id=104, 562.1pt x 421.575pt>
+<../Figures/poly_degree_5.jpg, id=109, 562.1pt x 421.575pt>
 File: ../Figures/poly_degree_5.jpg Graphic file (type jpg)
 
 <use ../Figures/poly_degree_5.jpg>
@@ -1131,7 +1131,7 @@ Missing character: There is no â in font cmbx10!
 Missing character: There is no € in font cmbx10!
 Missing character: There is no ™ in font cmbx10!
 
-<../Figures/RBF_sig2.jpg, id=110, 1188.44pt x 371.3875pt>
+<../Figures/RBF_sig2.jpg, id=115, 1188.44pt x 371.3875pt>
 File: ../Figures/RBF_sig2.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_sig2.jpg>
@@ -1144,34 +1144,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 357--362
 
 [8 <../Figures/poly_degree_1.jpg> <../Figures/poly_degree_2.jpg> <../Figures/po
 ly_degree_3.jpg> <../Figures/poly_degree_4.jpg> <../Figures/poly_degree_5.jpg>]
-<../Figures/RBF_gam.jpg, id=116, 1188.44pt x 363.3575pt>
+<../Figures/RBF_gam.jpg, id=121, 1188.44pt x 363.3575pt>
 File: ../Figures/RBF_gam.jpg Graphic file (type jpg)
 
 <use ../Figures/RBF_gam.jpg>
 Package pdftex.def Info: ../Figures/RBF_gam.jpg used on input line 366.
 (pdftex.def)             Requested size: 475.36758pt x 145.34041pt.
- [9 <../Figures/RBF_sig2.jpg> <../Figures/RBF_gam.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 374.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 374.
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
+
+ []
+
+<../Figures/valerrorg.jpg, id=122, 562.1pt x 421.575pt>
+File: ../Figures/valerrorg.jpg Graphic file (type jpg)
+
+<use ../Figures/valerrorg.jpg>
+Package pdftex.def Info: ../Figures/valerrorg.jpg used on input line 381.
+(pdftex.def)             Requested size: 241.84842pt x 181.38306pt.
+
+<../Figures/Valerror.jpg, id=123, 562.1pt x 421.575pt>
+File: ../Figures/Valerror.jpg Graphic file (type jpg)
+
+<use ../Figures/Valerror.jpg>
+Package pdftex.def Info: ../Figures/Valerror.jpg used on input line 386.
+(pdftex.def)             Requested size: 241.84842pt x 181.38306pt.
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 380--389
+[][] [] 
+ []
+
+[9 <../Figures/RBF_sig2.jpg> <../Figures/RBF_gam.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
+
+ []
+
+<../Figures/ROC.jpg, id=130, 562.1pt x 421.575pt>
+File: ../Figures/ROC.jpg Graphic file (type jpg)
+ <use ../Figures/ROC.jpg>
+Package pdftex.def Info: ../Figures/ROC.jpg used on input line 411.
+(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
+
+[10 <../Figures/valerrorg.jpg> <../Figures/Valerror.jpg>] [11 <../Figures/ROC.j
+pg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 415.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 415.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 374.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 374.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: E353C5CD4D744F795661112A5B57CFB6;208
-(rerunfilecheck)             After:  FEB4E588EEC4BA9BC767AE821EE84695;270.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 374.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 415.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 415.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: FEB4E588EEC4BA9BC767AE821EE84695;270.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 415.
  ) 
 Here is how much of TeX's memory you used:
- 19029 strings out of 493335
- 350401 string characters out of 3136681
+ 19049 strings out of 493335
+ 350809 string characters out of 3136681
  406029 words of memory out of 3000000
- 22151 multiletter control sequences out of 15000+200000
+ 22164 multiletter control sequences out of 15000+200000
  14858 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,54p,800b,515s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1188,9 +1226,9 @@ x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (11 pages, 1048667 bytes).
+Output written on main.pdf (13 pages, 1102969 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 192 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
 
