@@ -412,4 +412,149 @@ The ROC is often used to asses a model. It is important not to use this on the v
 	\caption{Error rate VS. gam}
 \end{figure}
 
+\section{Playing around with data}
+
+This section will be about apply techniques learned in a more tutorial based setting to real date sets. A set of 5 questions will be answered about each data set.
+
+\subsection{Ripley Dataset}
+
+
+\textbf{1. Look at the plotted data. What seems to be important properties of the data?}\\
+
+The data is split into four distinct groups with slight over lap. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{../Figures/ripley_vis}
+	\caption{data visualized}
+\end{figure}
+
+\textbf{2. Try a linear model. Do you think it’s sufficient?}\\
+The linear model cannot model this data at all. This is because the data is not linearly separable. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{../Figures/ripley_linear}
+	\caption{Linear Model for ripley }
+\end{figure}
+
+\textbf{3. Try the RBF kernel and tune its parameter. Is the tuning acceptable? Run several times the routine tunelssvm. Do the tuned parameters gam and sig2 change? What about the performance?}\\
+
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/ripley_CSA_grid}
+		\caption{CSA and gridsearch}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/ripley_CSA_simp}
+		\caption{CSA and simplex}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/ripley_DS_grid}
+		\caption{DS and grid search}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/ripley_DS_simp}
+		\caption{DS and simplex}
+	\end{subfigure}
+	\caption{Different tuning methods}
+	
+\end{figure}
+
+\textbf{5. Judge your final model. Is the methodology perfectly suited for this data-set?}
+It is well suited but with such a high AUC it may be prone to overfitting.
+
+\subsection{Diabetes Dataset}
+
+\textbf{1. Look at the plotted data. What seems to be important properties of the data?}\\
+
+This data is almost completely indistinguishable from each other. There is almost complete overlap between the two data sets. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{../Figures/breast_viz}
+	\caption{Data viz for breast }
+\end{figure}
+
+\textbf{2. Try a linear model. Do you think it’s sufficient?}\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{../Figures/breast_lin}
+	\caption{Linear Model for  breast }
+\end{figure}
+
+The linear model is not sufficient.\\
+\textbf{3. Try the RBF kernel and tune its parameter. Is the tuning acceptable? Run several times the routine tunelssvm. Do the tuned parameters gam and sig2 change? What about the performance?}\\
+
+
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/breast_CSA_grid}
+		\caption{CSA and gridsearch}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/breast_CSA_simp}
+		\caption{CSA and simplex}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/breast_DS_grid}
+		\caption{DS and grid search}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/breast_DS_simp}
+		\caption{DS and simplex}
+	\end{subfigure}
+	\caption{Different tuning methods}
+	
+\end{figure}
+
+\textbf{5. Judge your final model. Is the methodology perfectly suited for this data-set?}
+
+\subsection{Breast Cancer Dataset}
+
+\textbf{1. Look at the plotted data. What seems to be important properties of the data?}\\
+
+The datasets are completely intertwined.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{../Figures/diabetes_viz}
+	\caption{viz of diabetes }
+\end{figure}
+\textbf{2. Try a linear model. Do you think it’s sufficient?}\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{../Figures/diabetes_linear}
+	\caption{viz of diabetes }
+\end{figure}
+\textbf{3. Try the RBF kernel and tune its parameter. Is the tuning acceptable? Run several times the routine tunelssvm. Do the tuned parameters gam and sig2 change? What about the performance?}\\
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/diabetes_CSA_grid}
+		\caption{CSA and gridsearch}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/diabetes_CSA_simp}
+		\caption{CSA and simplex}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/diabetes_DS_grid}
+		\caption{DS and grid search}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/diabetes_DS_simp}
+		\caption{DS and simplex}
+	\end{subfigure}
+	\caption{Different tuning methods}
+	
+\end{figure}
+
 \end{document}

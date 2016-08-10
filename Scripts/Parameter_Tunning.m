@@ -28,6 +28,8 @@ fprintf('\n on test: #misclass = %d, error rate = %.2f%%\n', err, err/length(Yva
 gam = 10;
 sig2list = [0.1, 1, 10];
 errlist = [];
+
+
 for sig2 = sig2list
     [alpha,b] = trainlssvm({Xtrain,Ytrain,'c',gam,sig2,'RBF_kernel'});
     estYval = simlssvm({Xtrain,Ytrain,'c',gam,sig2,'RBF_kernel'},{alpha,b},Xval);
