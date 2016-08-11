@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.7)  11 AUG 2016 02:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.7)  11 AUG 2016 02:49
 entering extended mode
 **./main.tex
 (main.tex
@@ -1859,38 +1859,38 @@ gures/kern1.png>] <../Figures/sv_c.png, id=437, 421.575pt x 316.18124pt>
 File: ../Figures/sv_c.png Graphic file (type png)
 
 <use ../Figures/sv_c.png>
-Package pdftex.def Info: ../Figures/sv_c.png used on input line 934.
+Package pdftex.def Info: ../Figures/sv_c.png used on input line 936.
 (pdftex.def)             Requested size: 193.47577pt x 145.1074pt.
 
 <../Figures/error_c.png, id=438, 421.575pt x 316.18124pt>
 File: ../Figures/error_c.png Graphic file (type png)
 
 <use ../Figures/error_c.png>
-Package pdftex.def Info: ../Figures/error_c.png used on input line 939.
+Package pdftex.def Info: ../Figures/error_c.png used on input line 941.
 (pdftex.def)             Requested size: 193.47577pt x 145.1074pt.
 
 <../Figures/time_c.png, id=439, 421.575pt x 316.18124pt>
 File: ../Figures/time_c.png Graphic file (type png)
 
 <use ../Figures/time_c.png>
-Package pdftex.def Info: ../Figures/time_c.png used on input line 944.
+Package pdftex.def Info: ../Figures/time_c.png used on input line 946.
 (pdftex.def)             Requested size: 193.47577pt x 145.1074pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 933--947
+Underfull \hbox (badness 10000) in paragraph at lines 935--949
 [][] []
  []
 
 [30 <../Figures/sv_num.png> <../Figures/error.png> <../Figures/time2.png>]
 [31 <../Figures/sv_c.png> <../Figures/error_c.png> <../Figures/time_c.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 949.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 949.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 951.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 951.
 
 (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 949.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 949.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 951.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 951.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 66D7A39BC67811FAC23A38CD298CFB77;1585.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 949.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 951.
  ) 
 Here is how much of TeX's memory you used:
  19500 strings out of 493335
@@ -1914,7 +1914,7 @@ s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (33 pages, 4796995 bytes).
+Output written on main.pdf (33 pages, 4803887 bytes).
 PDF statistics:
  523 PDF objects out of 1000 (max. 8388607)
  102 named destinations out of 1000 (max. 500000)
