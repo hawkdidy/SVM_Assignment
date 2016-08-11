@@ -105,9 +105,10 @@ August\or September\or October\or November\or December\fi\ \number\year}
 
 \cleardoublepage
 
-\section{Objectives}
+\section{Assignment 1}
+\subsection{Objectives}
 The objectives of this assignment are to learn and work with real life applications of SVM. 
-\section{Simple 2 Gaussian}
+\subsection{Simple 2 Gaussian}
 This sections looks at two simulated datasets. The datasets are created using the MatLab $randn()$ function. One dataset is centered around (1,1) and the other (-1,1)\\
 
 \begin{figure}[H]
@@ -146,7 +147,7 @@ This sections looks at two simulated datasets. The datasets are created using th
 \textbf{Given this figure, can you make a geometric construction using lines to estimate the optimal classifier? Under which conditions do you think this construction is optimal/valid?}\\
 
 Figure 1:a is the output of the simulated datasets. As shown in figure 1:b it is possible to show an optimal classifier. This classifier is known as the Bayes Classifier. A test observation is assigned with predictor vector $x_{0}$ to the class j for which    \[ Pr(Y=j|X=x_{0}) \] is largest. The classifier is optimal because it produces the lowest possible error rate and allows for some overlap. The classifier is valid because the underlying distribution of the dataset is known. This falls into the special case $\Sigma_{xx1} = \Sigma_{xx2} - \Sigma_{xx}$, the covariance matrices are equal and the decision boundary is linear.
-\section{The Support Vector Machine}
+\subsection{The Support Vector Machine}
 
 This section will deal with an online demo of a linear and none linear SVM. It will be used to learn the intuition behind changing SVM parameters and changes in the dataset.\\
 
@@ -306,7 +307,7 @@ increase/decrease. When does a particular datapoint become a Support Vector?}\\
 \textbf{When does the corresponding importance of a Support Vector change?}\\
 The importance of support vector changes when the influence it has on the decision boundary is altered. This can happen when changing the c parameter.
 
-\section{Using LSSVM}
+\subsection{Using LSSVM}
 In this section the matlab package LSSVM will be used to explore the Iris Dataset.
 
 \begin{figure}[H]
@@ -369,7 +370,7 @@ A range used for both sig2 and gamma was 0.01, 0.5, 4, 10, 20, 100.Between point
 
 Comparing to the results from the sample script you get a very similar outlook. You need a good balance between gam and sig to balance between over fitting and misclassification. 
 
-\section{Choice of Hyper-parameters}
+\subsection{Choice of Hyper-parameters}
 In this section the intuition developed from the previous sections will be used to start using autotuning algorithms. \\
 
 \textbf{Motivate why this validation set used to optimize a number of(tuning-) parameters cannot used again to measure the final model.} \\
@@ -412,11 +413,11 @@ The ROC is often used to asses a model. It is important not to use this on the v
 	\caption{Error rate VS. gam}
 \end{figure}
 
-\section{Playing around with data}
+\subsection{Playing around with data}
 
 This section will be about apply techniques learned in a more tutorial based setting to real date sets. A set of 5 questions will be answered about each data set.
 
-\subsection{Ripley Dataset}
+\subsubsection{Ripley Dataset}
 
 
 \textbf{1. Look at the plotted data. What seems to be important properties of the data?}\\
@@ -466,7 +467,7 @@ The linear model cannot model this data at all. This is because the data is not 
 \textbf{5. Judge your final model. Is the methodology perfectly suited for this data-set?}
 It is well suited but with such a high AUC it may be prone to overfitting.
 
-\subsection{Diabetes Dataset}
+\subsubsection{Diabetes Dataset}
 
 \textbf{1. Look at the plotted data. What seems to be important properties of the data?}\\
 
@@ -515,7 +516,7 @@ The linear model is not sufficient.\\
 
 \textbf{5. Judge your final model. Is the methodology perfectly suited for this data-set?}
 
-\subsection{Breast Cancer Dataset}
+\subsubsection{Breast Cancer Dataset}
 
 \textbf{1. Look at the plotted data. What seems to be important properties of the data?}\\
 
@@ -556,5 +557,284 @@ The datasets are completely intertwined.
 	\caption{Different tuning methods}
 	
 \end{figure}
+
+\section{Assignment 2}
+
+\subsection{The support vector machine for regression}
+SVMs can also be used to solve regression problems. In the following exercises that means modeling 20 data points. The higher the e values the less support vectors are used. Sparsity comes into play when you show the model new data. A model where the bound is inf and the e is equal to 0 will generalize very poorly even if it fits well the validation set. In the default setup you do not have sparseness. All data points are support vectors, which takes away the benefit of SVMs, non-zero support vectors describing the model instead of all data points. \\  
+\textbf{Construct a data-set of around 20 data-points. Which kernel is best suited for your data-set?}\\
+The initial 20 point dataset was created using the uiregress interface. The best kernel was the Exponential RBF. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{../Figures/urigress_best}
+	\caption{20 Data points }
+\end{figure}
+
+The the higher the e value the further it is from being a good model. 
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/linear_1}
+		\caption{e = .1}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/linear_25}
+		\caption{e =.25}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/linear_5}
+		\caption{e = .5}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/linear_urigress}
+		\caption{default values}
+	\end{subfigure}
+	\caption{Different values of e}
+	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/linear_b_01}
+		\caption{bound = 0.01}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/linear_b_1}
+		\caption{bound = 0.1}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/linear_b_11}
+		\caption{bound = 1}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/linear_b_10}
+		\caption{bound = 10}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/linear_b_100}
+		\caption{bound = 100}
+	\end{subfigure}
+	\caption{Different values for the bound}
+	
+\end{figure}
+
+\subsection{A Simple Example: Sum of Cosines}
+
+\textbf{Do you think there is one pair of optimal hyper-parameters?}
+The model was very constrained with the original parameters. Due to its linear nature sig2 was too high. Reducing both parameters gave a better fit. 
+
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/test_sig_gam_arb}
+		\caption{arbitrary sigma and gamma, 100 and 1.0}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig_gama_50_1}
+		\caption{gamma = 50, sigma = 0.1}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig_gama_25_01}
+		\caption{gamma = 25, sigma = 0.01}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig_gama_200_1}
+		\caption{gamma = 200 and sigma = 10}
+	\end{subfigure}
+	\caption{Different values for sigma and gamma}
+	
+\end{figure}
+
+\subsection{Hyper-parameter Tuning}
+
+\textbf{
+What can you say about the values of the hyperparameters
+and the results? What is the difference between 'simplex' and 'gridsearch'? Is there any significant deviation in results?
+Which method is faster and why?}\\
+
+The hyperparameters vary in a pretty tight range between sigma = .05-.11 to gamma = 500-1000. The simplex is an algorithm while the gridsearch is brute force. Although they happened to fall within similar ranges. The fastest is csa and simplex together because these are algorithms that go about parameter tunning methodically. The results of all methods are similar but the DS and gridsearch take a lot of time. 
+
+\subsection{Application of the Bayesian Framework}
+A decreasing of the sig2 value increases the probability of the data to belong to the positive class. Increasing of the gamma parameter allowed for more misclassification. If a point falls into a blue area it is more likely to be a negative class and if it falls in into a purple area it is more likely to be positive. Lowering sigma gives you a more rigid boundary and lowers the chance of misclassification. Raising gamma gives you a fuzzier decision boundary.
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/test_data_bayes}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/dig_sig}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/gam_sig_dif}
+
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/gamma_50_bayes}
+
+	\end{subfigure}
+	
+\end{figure}
+
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig_1_bayes}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig_01_bayes}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig_2_bayes}
+		
+	\end{subfigure}
+\end{figure}
+
+\textbf{Can you think of a similar way to do input selection by
+using the crossvalidate function instead of the Bayesian framework?}
+
+ It possible by creating all possible variable combinations and crossvalidating all models to score the MSE. It would take a long time be prohibitively time consuming. 
+\subsection{Robust Regression}
+A model of with outlier in the data will cause noise in the model. It will cause the model to be bais by their values. MAE is used because it is less sensitive to outliers. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{../Figures/robust}
+\end{figure}
+
+\subsection{Time-series Prediction}
+SVM can also work on predicted time-series sequences. 
+
+\subsection{Sante Fe laser Data}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.5]{../Figures/sante_fe}
+\end{figure}
+
+Yes this seems like a good choice. The model lags but can still predict pretty well.
+
+If you used a validation set to optimize you would get autocorrelation. 
+\section{Assignment 3}
+
+This section will discuss unsupervised learning.
+
+\subsection{PCA}
+
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/linaer_3}
+		\caption{3 components}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/kernal_3}
+		\caption{3 components}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/kernel_9}
+		\caption{9 components}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/kernal_20}
+		\caption{20 components}
+\end{subfigure}		
+\end{figure}
+\textbf{Kernel PCA can be used for feature extraction, denoising, dimensionality reduction and density estimation. Can you describe what's happening with the denoising if you increase the number of principal components? What is the difference with linear PCA? How many principal components can you obtain with kernel PCA? and
+with linear PCA? Can you think of a technique to tune the number of components and the kernel hyper-parameter?}\\
+
+As the number of PC increased the model started to look better. However after a certain amount you start to overfit. Linear PCA does not work for this data at all. Around 3 components we start to get a model that gets really well. The none linear character of that is being captures. The linear PCA is a dimension reduction technique that can have as many components as dimensions. A kernel PCA can have infinite number of dimensions because it takes place in the kernel space. 
+
+\subsection{Handwritten Digit Denoising}
+
+\textbf{This data-set consists of features of handwritten numerals (0 to 9) extracted from a collection of Dutch utility maps. Try the sample script on Toledo and explain what you observe.}\\
+
+First line is the original data. The second has noice added to it. The rows that follow show the PCA's trying to remove the noise. As you can see the kernel PCA does much better than the liner one. 
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/hand}
+		\caption{Kernel PCA}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/linear_hand}
+		\caption{Linear PCA}
+	\end{subfigure}
+	
+\end{figure}
+
+\subsection{Spectral Clustering}
+
+\textbf{What is the difference with classification?}
+Classification is a supervised method. This means that it is trained on data where the "answer" is known. Data that already has a set of predicitions. Clustering estimates which class a particular points belongs into.
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig001}
+		\caption{sig = 0.001}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig01}
+		\caption{sig = 0.01}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig005}
+		\caption{sig = 0.005}
+	\end{subfigure}
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{../Figures/sig01m}
+		\end{subfigure}
+\end{figure}
+
+The low sigma classifies perfectly in one ring. The higher sigma goes the more misclassification is allowed. Eventually though when it goes high enough the other ring gets classified perfectly.
+
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig001s}
+		\caption{sig = 0.001}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig01s}
+		\caption{sig = 0.01}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig005s}
+		\caption{sig = 0.005}
+	\end{subfigure}
+\end{figure}
+
+\subsection{Fixed Size LS-SVM}
+
+\textbf{ What is the influence of the chosen sig2?}
+
+Fixed sized SVM has a bases of two ideas. Using the primal-dual formulation of LS-SVM and secondly to select support vectors actively. When sigma decreases the points start to move towards a single side. When sigma increase the points tend to spread out.
+
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig05aprox}
+		\caption{sig = 0.05}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sig100aprox}
+		\caption{sig = 150}
+	\end{subfigure}
+\end{figure}
+
+
 
 \end{document}

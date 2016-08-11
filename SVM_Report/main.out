@@ -1,9 +1,20 @@
-\BOOKMARK [1][-]{section.1}{Objectives}{}% 1
-\BOOKMARK [1][-]{section.2}{Simple 2 Gaussian}{}% 2
-\BOOKMARK [1][-]{section.3}{The Support Vector Machine}{}% 3
-\BOOKMARK [1][-]{section.4}{Using LSSVM}{}% 4
-\BOOKMARK [1][-]{section.5}{Choice of Hyper-parameters}{}% 5
-\BOOKMARK [1][-]{section.6}{Playing around with data}{}% 6
-\BOOKMARK [2][-]{subsection.6.1}{Ripley Dataset}{section.6}% 7
-\BOOKMARK [2][-]{subsection.6.2}{Diabetes Dataset}{section.6}% 8
-\BOOKMARK [2][-]{subsection.6.3}{Breast Cancer Dataset}{section.6}% 9
+\BOOKMARK [1][-]{section.1}{Assignment 1}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Objectives}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Simple 2 Gaussian}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{The Support Vector Machine}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Using LSSVM}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Choice of Hyper-parameters}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.6}{Playing around with data}{section.1}% 7
+\BOOKMARK [1][-]{section.2}{Assignment 2}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{The support vector machine for regression}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.2}{A Simple Example: Sum of Cosines}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.3}{Hyper-parameter Tuning}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.4}{Application of the Bayesian Framework}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.5}{Robust Regression}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.6}{Time-series Prediction}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.7}{Sante Fe laser Data}{section.2}% 15
+\BOOKMARK [1][-]{section.3}{Assignment 3}{}% 16
+\BOOKMARK [2][-]{subsection.3.1}{PCA}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.2}{Handwritten Digit Denoising}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.3}{Spectral Clustering}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.4}{Fixed Size LS-SVM}{section.3}% 20
