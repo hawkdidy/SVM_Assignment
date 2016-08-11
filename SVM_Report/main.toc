@@ -21,3 +21,6 @@
 \contentsline {subsection}{\numberline {3.2}Handwritten Digit Denoising}{23}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Spectral Clustering}{24}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Fixed Size LS-SVM}{26}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Handwritten Digit Denoising (Homework)}{27}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Shuttle}{29}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}California}{31}{subsection.3.7}

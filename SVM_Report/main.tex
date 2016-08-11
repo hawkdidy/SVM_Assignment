@@ -70,7 +70,7 @@ August\or September\or October\or November\or December\fi\ \number\year}
   \vspace*{40.0mm}
   %\vspace{-20mm}\framebox{DRAFT VERSION}\vspace{20mm} \\
   }
-\author{\sf Mohamedhakim Elakhrass}
+\author{\sf Mohamedhakim Elakhrass \\ Student Number: r0476519}
 \date{\sf 15/07/2016}
 
 
@@ -835,6 +835,117 @@ Fixed sized SVM has a bases of two ideas. Using the primal-dual formulation of L
 	\end{subfigure}
 \end{figure}
 
+\textbf{Can you intuitively describe to what subset the algorithm converges?}
+This algorithm converges at the minimum subset of points necessary for describing the data in the feature space. 
 
+\textbf{In some cases we are interested in a sparser solution that we can attain using a predefined number of representative points. We can achieve this by applying `0-type of a penalty in an iterative fashion to an initial Fixed-sizeLS-SVM solution. Run fslssvm script:m and obtain the results. Compare the results of Fixed-size LS-SVM to `0-approximation in terms of the test errors, number of Support Vectors, etc.}\\
+
+Comparing the two shows that have Lo penalty lowers the number support vectors. The rest of they are very similar. However there is higher variance for the error rate witht he Lo.
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/support_vector_number}
+		\caption{number of SV}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/error_comparision}
+		\caption{Comparison of errors}
+	\end{subfigure}
+		%
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{../Figures/time}
+			\caption{time of computation}
+		\end{subfigure}
+\end{figure}
+
+\subsection{Handwritten Digit Denoising (Homework)}
+
+For sigma values significantly smaller than one will only produce noise. 
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/0001}
+		\caption{sigma = 0.0001}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/01}
+		\caption{sigma = 0.01}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/07}
+		\caption{sigma = 0.07}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/10}
+		\caption{sigma = 10}
+	\end{subfigure}
+\end{figure}
+
+The following images show the difference between the kernel and linear PCA.The linear PCA was again not able to reconstruct the images. 
+\textbf{\begin{figure}[H]
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{../Figures/lin01}
+			\caption{Linear PCA sigma = 0.01}
+		\end{subfigure}
+		%
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{../Figures/kern01}
+			\caption{Kernal PCA sigma = 0.01}
+		\end{subfigure}
+		%
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{../Figures/lin1}
+			\caption{Linear PCA sigma = 1}
+		\end{subfigure}
+		%
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{../Figures/kern1}
+			\caption{Kernal PCA sigma = 1}
+		\end{subfigure}
+	\end{figure}
+	}
+
+\subsection{Shuttle}
+
+As before the only significant different is the variance of the errors and the number of SV. The number of SV is because the SVLo is trying to add additional spareness to the model.
+
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sv_num}
+		\caption{number of SV}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/error}
+		\caption{Comparison of errors}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/time2}
+		\caption{time of computation}
+	\end{subfigure}
+\end{figure}
+
+\subsection{California}
+
+The same as before the LO had a less error support vectors and the time comparison was the similar. The error rates slightly differed. All in all it was mostly the same as before. 
+\begin{figure}[H]
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/sv_c}
+		\caption{number of SV}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/error_c}
+		\caption{Comparison of errors}
+	\end{subfigure}
+	%
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../Figures/time_c}
+		\caption{time of computation}
+	\end{subfigure}
+\end{figure}
 
 \end{document}
